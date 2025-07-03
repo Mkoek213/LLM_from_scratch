@@ -175,3 +175,4 @@ cython_debug/
 
 # My configurations
 data_brzechwa.txt
+*.pt
