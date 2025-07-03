@@ -186,7 +186,7 @@ def generate_text_simple(model, idx, max_new_tokens, context_size):
 
 
 def create_dataloader_v1(txt, batch_size=4, max_length=256, stride=128, shuffle=True, drop_last=True, num_workers=8):
-    tokenizer = tiktoken.get_encoding("o200k_base")
+    tokenizer = tiktoken.get_encoding("r50k_base")  # Use the appropriate tokenizer for your model
     dataset = GPTDatasetV1(txt, tokenizer, max_length, stride)
 
     dataloader = DataLoader(
