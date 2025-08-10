@@ -176,3 +176,6 @@ cython_debug/
 # My configurations
 data_brzechwa.txt
 *.pt
+sms_spam_collection/
+notebooks/gpt2/
+*.zip
